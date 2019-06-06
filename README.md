@@ -19,16 +19,16 @@ We're open sourcing this project because we'd love your help. Collecting these a
 
 The collector is broken out into a series of services, each with its own repo:
 
-- **[fbpac-extension](https://github.com/globeandmail/fbpac-extension)**: The browser extension that monitors your Facebook feed and sends ads data to the app.
-- **[fbpac-api](https://github.com/globeandmail/fbpac-api)**: Rails app. Serves API for React portion of website (public-facing, if applicable, and admin); manages login for admin dashboard; serves entire Targeting Breakdown page. Runs on Amazon ECS.
-- **[fbpac-backend](https://github.com/globeandmail/fbpac-backend)**: Rust app. Receives ads and ad ratings submitted by extension users; serves a rudimentary feed for Ads Others Are Seeing tab in extension; serves assets for website. Runs on Amazon ECS.
-- **[fbpac-classifier](https://github.com/globeandmail/fbpac-classifier)**: Python scripts for building a model to train a model to predict whether an ad is political given its text, along with scripts for updating each database record with that prediction. Runs on Amazon ECS.
-- **[fbpac-archiver](https://github.com/globeandmail/fbpac-archiver)**: A cron to archive the database to a CSV file weekly for analysis, if necessary. Runs on Amazon ECS.
-- **[fbpac-page](https://github.com/globeandmail/fbpac-page)**: A simple site showing how to install the ad collector and explaining WTF the FBPAC project is.
+- **`[fbpac-extension](https://github.com/globeandmail/fbpac-extension)`**: The browser extension that monitors your Facebook feed and sends ads data to the app.
+- **`[fbpac-api](https://github.com/globeandmail/fbpac-api)`**: Rails app. Serves API for React portion of website (public-facing, if applicable, and admin); manages login for admin dashboard; serves entire Targeting Breakdown page. Runs on Amazon ECS.
+- **`[fbpac-backend](https://github.com/globeandmail/fbpac-backend)`**: Rust app. Receives ads and ad ratings submitted by extension users; serves a rudimentary feed for Ads Others Are Seeing tab in extension; serves assets for website. Runs on Amazon ECS.
+- **`[fbpac-classifier](https://github.com/globeandmail/fbpac-classifier)`**: Python scripts for building a model to train a model to predict whether an ad is political given its text, along with scripts for updating each database record with that prediction. Runs on Amazon ECS.
+- **`[fbpac-archiver](https://github.com/globeandmail/fbpac-archiver)`**: A cron to archive the database to a CSV file weekly for analysis, if necessary. Runs on Amazon ECS.
+- **`[fbpac-page](https://github.com/globeandmail/fbpac-page)`**: A simple site showing how to install the ad collector and explaining WTF the FBPAC project is.
 
 Instructions on how to install the different parts of the project are contained in the individual repos, in their respective READMEs. Most of the repos rely on Docker for deployment, so make sure you have that installed.
 
-To learn more about how to internationalize the app for a new country, read the [i18n guide](https://github.com/globeandmail/facebook-political-ads/tree/master/i18n.md).
+To learn more about how to internationalize the app for a new country, read the [i18n guide](https://github.com/globeandmail/facebook-political-ads/tree/master/INTERNATIONALIZATION.md).
 
 The app is designed to be deployed to an Amazon Web Services Elastic Container Service (ECS) environment.
 
