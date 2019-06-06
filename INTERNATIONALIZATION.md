@@ -13,7 +13,7 @@ In `https://github.com/globeandmail/fbpac-extension/tree/master/src/i18n.js` a l
 The FBPAC extension detects advertisements on Facebook using the "Sponsored" tag that appears on each ad. But, this "Sponsored" tag is translated, e.g. to "Commandité" or "Sponsorisé". Find the list of translations around line 585 of extension/src/parser.js and, if your language’s translation not present, add it. (You can easily change your Facebook language to see the UI in whatever target language you’re looking at.)
 Note that Facebook inserts the first letter of the Sponsored tag into the middle of the word (e.g. SpSonSsoSred or CoCmmCandCité), presumably as a way to thwart adblockers, and hides the extra letter with CSS. You’ll want to write in the translation of Sponsored “correctly”, without Facebook’s extra junk.
 
-###### Locale-specific styles in extension popup
+##### Locale-specific styles in extension popup
 
 You can customize, for example font sizes, with `[lang]` and `[data-locale]` CSS selectors:
 
