@@ -79,7 +79,6 @@ We could also use help in orchestrating the deployment of all the repos to AWS. 
 A few other TODOs:
 
  - considering triggering the ad parsing routine only on scroll, to mitigate the clicking-off problems.
- - consider retaining utm params (i.e. a whitelisted set of parameters in links that are added by advertisers, not by FB and ipso facto are not personally identifiable, e.g. `utm_content`, etc., since those sometimes include useful metadata about the ad.)
  - consider turning off the panelist_ads table, etc.
  - consider seeding the partisanship model in new languages with political tweets.
  - the [targeting parser](https://github.com/globeandmail/fbpac-backend/tree/master/server/src/targeting_parser.rs) is in need of internationalization
