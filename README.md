@@ -38,7 +38,8 @@ We also need an Amazon S3 folder for storing ad images; the Rust app has to have
 
 
 ### Stories
-
+* [Federal parties uploading voters’ e-mail addresses to Facebook to show them targeted ads
+](https://www.theglobeandmail.com/politics/article-federal-parties-uploading-voters-e-mail-addresses-to-facebook-to-show/)
 * [Globe and Mail takes over global Facebook ad-monitoring project](https://www.theglobeandmail.com/politics/article-globe-and-mail-takes-over-global-facebook-ad-monitoring-project/)
 * [Nine early signs of how Facebook ads are being used in Ontario’s election](https://www.theglobeandmail.com/canada/article-ford-targeting-the-trump-curious-nine-things-weve-learned-so-far/)
 * [Help Us Monitor Political Ads Online](https://www.propublica.org/article/help-us-monitor-political-ads-online)
